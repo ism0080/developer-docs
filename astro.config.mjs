@@ -13,16 +13,20 @@ export default defineConfig({
             },
             sidebar: [
                 {
-                    label: 'Links',
+                    label: 'Resources',
                     autogenerate: {
-                        directory: 'links'
+                        directory: 'resources'
+                    }
+                },
+                {
+                    label: 'Development',
+                    autogenerate: {
+                        directory: 'dev'
                     }
                 }
             ],
             customCss: ['./src/tailwind.css']
         }),
-        tailwind({
-            applyBaseStyles: false
-        })
+        tailwind({ applyBaseStyles: false })
     ]
 });

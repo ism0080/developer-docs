@@ -26,5 +26,5 @@ module.exports = {
             colors: { accent, gray }
         }
     },
-    plugins: [starlightPlugin()]
+    plugins: [starlightPlugin(), require('@tailwindcss/typography')]
 };
