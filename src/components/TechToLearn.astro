@@ -14,12 +14,12 @@ const data: PocketBaseResponse<TechToLearn> = await response.json();
         data.items.map((tech) => (
             <li class="list-none py-2 group">
                 <a
-                    class="no-underline hover:text-inherit"
+                    class="no-underline hover:text-inherit text-inherit"
                     href={tech.url}
                     target="_blank"
                     rel="noreferrer noopener"
                 >
-                    <div class="bg-stone-100 rounded-lg p-4 group-hover:border-l-8">
+                    <div class="bg-stone-100 dark:bg-accent-950 dark:text-gray-100 rounded-lg p-4 group-hover:border-l-8">
                         <p class="text-lg font-bold">{tech.name}</p>
                         <p>{tech.description}</p>
                     </div>

@@ -14,9 +14,11 @@ const data: PocketBaseResponse<ProjectIdeas> = await response.json();
     {
         data.items.map((tech) => (
             <li class="list-none py-2">
-                <div class="bg-stone-100 rounded-lg p-4">
+                <div class="bg-stone-100 dark:bg-accent-950 rounded-lg p-4">
                     <p class="text-lg font-bold">{tech.name}</p>
-                    <div class="prose prose-sm">{parse(tech.description)}</div>
+                    <div class="prose prose-sm dark:prose-invert prose-slate">
+                        {parse(tech.description)}
+                    </div>
                 </div>
             </li>
         ))
