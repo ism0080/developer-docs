@@ -11,6 +11,16 @@ export default defineConfig({
             social: {
                 github: 'https://github.com/ism0080'
             },
+            head: [
+                {
+                    tag: 'script',
+                    attrs: {
+                        src: 'https://assets.onedollarstats.com/stonks.js',
+                        defer: true,
+                        'data-debug': 'docs.isaacmackle.com'
+                    }
+                }
+            ],
             sidebar: [
                 {
                     label: 'Resources',
